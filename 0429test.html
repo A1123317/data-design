@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>臺中市五歲年齡人口統計</title>
+    <title>臺中市年齡人口統計與集點子</title>
     <style>
         /* Reset default styles */
         * {
@@ -34,7 +34,11 @@
             margin: 0 auto;
         }
 
-        .description {
+        .section {
+            margin-bottom: 3em;
+        }
+
+        .description, .intro {
             background: #fff;
             padding: 2em;
             border-radius: 10px;
@@ -42,14 +46,9 @@
             margin-bottom: 2em;
         }
 
-        .description h2 {
-            margin-bottom: 1em;
+        .intro h2, .description h2 {
             font-size: 1.5em;
             color: #4CAF50;
-        }
-
-        .description p {
-            text-align: justify;
             margin-bottom: 1em;
         }
 
@@ -69,6 +68,30 @@
             border: none;
         }
 
+        .idea-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 2em;
+            background: #fff;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .idea-section img {
+            max-width: 50%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .idea-text {
+            flex: 1;
+        }
+
+        .idea-text p {
+            text-align: justify;
+        }
+
         footer {
             margin-top: 3em;
             text-align: center;
@@ -79,16 +102,64 @@
 </head>
 <body>
     <header>
-        臺中市高齡年齡人口統計
+        臺中市高齡年齡人口統計與集點子
     </header>
     <main>
-        <div class="description">
-            <h2>65-79歲人口分布分析</h2>
-           
-        </div>
-        <div class="iframe-container">
-            <iframe src="https://plotdb.io/v/chart/37464" width="100%" height="600px" allowfullscreen="true" frameborder="0"></iframe>
-        </div>
+        <!-- 圖表分析部分 -->
+        <section class="section">
+            <div class="intro">
+                <h2>臺中市高齡人口分析</h2>
+                <p>
+                    以下兩張圖皆為113年12月臺中市高齡人口統計，分別是65-79歲和80-100的圖表分析。
+                    可以看出台中市65-79歲的人口數量高於80歲以上的人口，然而也有一些90-100歲的超高齡人口。
+                    透露出台灣人口老化的縮影：政策上應聚焦於這種雙峰現象，一方面為大量60-79歲的初老族群規劃長期生活與健康管理。
+                    另一方面也不能忽視90-100歲以上人口，需要個別化、高強度照護的需求。
+                    未來在社區設計、資源分配與服務提供上，執政者必須更精準地回應不同年齡層長者的需求。
+                </p>
+            </div>
+            <div class="description">
+                <h2>65-79歲人口分布分析</h2>
+                <p>以下為臺中市65-79歲年齡人口統計數據的可視化圖表。</p>
+            </div>
+            <div class="iframe-container">
+                <iframe src="https://plotdb.io/v/chart/37464" width="100%" height="600px" allowfullscreen="true" frameborder="0"></iframe>
+            </div>
+            <div class="description">
+                <h2>80-100歲人口分布分析</h2>
+                <p>以下為臺中市80-100歲年齡人口統計數據的可視化圖表。</p>
+            </div>
+            <div class="iframe-container">
+                <iframe src="https://plotdb.io/v/chart/37468" width="100%" height="600px" allowfullscreen="true" frameborder="0"></iframe>
+            </div>
+        </section>
+
+        <!-- 集點子部分 -->
+        <section class="section">
+            <div class="idea-section">
+                <img src="https://www.sinyicharity.org.tw/_next/image?url=https%3A%2F%2Fres.sinyicharity.org.tw%2F7b373e9a-90f4-4023-a136-55e274c517b8.jpg&w=1920&q=75" alt="旅遊團出遊">
+                <div class="idea-text">
+                    <h2>集點子：定期旅遊團出遊</h2>
+                    <p>
+                        定期安排旅遊團出遊行程，頻率約每個月到半年一次。比起讓老人待在家中或養老院，出門旅遊能讓年長者多了解，多感受外面的世界，拓寬他們的視野。
+                    </p>
+                    <p>
+                        但是因為台中市太平區行動不便的年長者人數較多，因此安排行程必須是行動不便者友善。
+                    </p>
+                    <p>
+                        一旅行團約20人，包括10位年長者，每位年長者最多可攜帶一位家屬。無法攜帶家屬的年長者會安排一位照護員，在旅途中一對一給予推輪椅、服藥提醒等照顧。
+                    </p>
+                    <p>
+                        和同齡人一同出遊能增進彼此感情，讓年長者在愛與歸屬層面得到滿足。也開放年長者攜帶自己的家人同遊，不僅能增進家人間的感情，也更方便照顧年長者。
+                    </p>
+                    <p>
+                        考量到輪椅使用者，接送用的遊覽車必須有輪椅停放區，並配有安全帶固定。安排的景點也必須有無障礙設施，例如電梯、輪椅坡道等。
+                    </p>
+                    <p>
+                        景點最好選擇附近有醫療機構的。旅行團至少安排一位醫療人員，在需要時提供醫療照護。
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         © 2025 Data Design Team. All rights reserved.
