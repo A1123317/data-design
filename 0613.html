@@ -74,24 +74,26 @@
             margin-bottom: 2px;
             margin-top: 8px;
         }
-        iframe {
-            display: block;
+        .chart-area {
+            margin: 20px 0 32px 0;
+            text-align: left;
+        }
+        .chart-area iframe {
             border: none;
             border-radius: 14px;
             box-shadow: 0 2px 14px rgba(60,60,80,.11);
-            width: 900px;
-            height: 600px;
-            max-width: 100%;
-            margin: 0 auto 32px auto;
+            width: 100%;
+            max-width: 900px;
+            height: 400px;
         }
         @media (max-width: 950px) {
             .container {
                 padding: 16px 4vw;
                 max-width: 100vw;
             }
-            iframe {
+            .chart-area iframe {
                 width: 100% !important;
-                height: 400px !important;
+                height: 280px !important;
             }
         }
     </style>
@@ -100,11 +102,13 @@
     <div class="container">
         <h1>PowerBI個人專案</h1>
         <p>A1123317 何晨禎</p>
-        <iframe title="A1123317_何晨禎_PowerBI個人專案"
-            src="https://app.powerbi.com/view?r=eyJrIjoiM2JhOTRkZjUtYmFhNC00YTFjLTg0ODktOWI1ZTlkYmFlYjU0IiwidCI6IjVhNDg0OTUzLTc3ZWYtNDJlYy05MGNmLTJmNGUxMDM3ZmZjNyIsImMiOjEwfQ%3D%3D"
-            allowFullScreen="true"></iframe>
 
         <h2>圖一：各測站1~5月每日雨量</h2>
+        <div class="chart-area">
+            <iframe title="A1123317_何晨禎_PowerBI個人專案" width="600" height="373.5"
+                src="https://app.powerbi.com/view?r=eyJrIjoiM2JhOTRkZjUtYmFhNC00YTFjLTg0ODktOWI1ZTlkYmFlYjU0IiwidCI6IjVhNDg0OTUzLTc3ZWYtNDJlYy05MGNmLTJmNGUxMDM3ZmZjNyIsImMiOjEwfQ%3D%3D"
+                frameborder="0" allowFullScreen="true"></iframe>
+        </div>
         <h3>研究問題</h3>
         <p>各測站的1至5月的降雨情況為何？是否有極端氣候（暴雨、缺水）？</p>
         <h3>互動設計</h3>
@@ -132,6 +136,11 @@
         </div>
 
         <h2>圖三：緞帶圖&卡片圖</h2>
+        <div class="chart-area">
+            <iframe title="A1123317_何晨禎_PowerBI個人專案" width="600" height="373.5"
+                src="https://app.powerbi.com/view?r=eyJrIjoiM2JhOTRkZjUtYmFhNC00YTFjLTg0ODktOWI1ZTlkYmFlYjU0IiwidCI6IjVhNDg0OTUzLTc3ZWYtNDJlYy05MGNmLTJmNGUxMDM3ZmZjNyIsImMiOjEwfQ%3D%3D"
+                frameborder="0" allowFullScreen="true"></iframe>
+        </div>
         <h3>研究問題</h3>
         <p>哪些測站有最多的總降雨？哪些測站每個月都有降雨？降雨集中在哪幾月，是否有明顯雨季？</p>
         <h3>互動設計</h3>
@@ -159,6 +168,11 @@
         </div>
 
         <h2>圖五：地圖&直方圖</h2>
+        <div class="chart-area">
+            <iframe title="A1123317_何晨禎_PowerBI個人專案" width="600" height="373.5"
+                src="https://app.powerbi.com/view?r=eyJrIjoiM2JhOTRkZjUtYmFhNC00YTFjLTg0ODktOWI1ZTlkYmFlYjU0IiwidCI6IjVhNDg0OTUzLTc3ZWYtNDJlYy05MGNmLTJmNGUxMDM3ZmZjNyIsImMiOjEwfQ%3D%3D"
+                frameborder="0" allowFullScreen="true"></iframe>
+        </div>
         <h3>研究問題</h3>
         <p>各地區的降雨分布，地圖中哪些測站總降雨量最多？</p>
         <h3>互動設計</h3>
