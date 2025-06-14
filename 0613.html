@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <title>A1123317_何晨禎_PowerBI個人專案</title>
+    <title>作業報表展示</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
@@ -16,23 +16,61 @@
             max-width: 1000px;
             margin: 40px auto;
             background: #fff;
-            border-radius: 16px;
-            box-shadow: 0 6px 24px rgba(90,100,120,.13);
-            padding: 32px 24px 24px 24px;
+            border-radius: 18px;
+            box-shadow: 0 6px 28px rgba(70, 80, 120, .15);
+            padding: 40px 36px 32px 36px;
             text-align: center;
         }
         h1 {
             color: #263159;
-            margin-bottom: 12px;
+            margin-bottom: 18px;
+            letter-spacing: 2px;
         }
-        p {
+        .section-title {
+            color: #4757a1;
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            letter-spacing: 1.5px;
+        }
+        .subtitle {
+            color: #5b558e;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            margin-top: 16px;
+        }
+        .dikw-block {
+            background: #f1f5fb;
+            border-radius: 12px;
+            box-shadow: 0 1px 6px rgba(120,120,150,0.07);
+            padding: 16px 24px;
+            margin: 14px 0 24px 0;
+            text-align: left;
+            display: inline-block;
+            min-width: 260px;
+            max-width: 600px;
+        }
+        .dikw-block ul {
+            margin: 0 0 0 18px;
+            padding: 0;
+        }
+        .dikw-title {
+            font-weight: bold;
+            color: #34406e;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+        .desc {
             color: #4b5563;
             margin-bottom: 24px;
+            font-size: 1.08rem;
         }
         iframe {
             border: none;
-            border-radius: 12px;
-            box-shadow: 0 2px 12px rgba(60,60,80,.1);
+            border-radius: 14px;
+            box-shadow: 0 2px 14px rgba(60,60,80,.12);
             width: 900px;
             height: 600px;
             max-width: 100%;
@@ -51,11 +89,95 @@
 </head>
 <body>
     <div class="container">
-        <h1>POWER BI 雨量測站報表</h1>
-        <p>A1123317 何晨禎</p>
+        <h1>作業報表展示</h1>
+        <p class="desc">下方為互動式 Power BI 報表，歡迎操作瀏覽！並可參考下方研究說明及資訊設計。</p>
         <iframe title="A1123317_何晨禎_PowerBI個人專案"
-                src="https://app.powerbi.com/view?r=eyJrIjoiM2JhOTRkZjUtYmFhNC00YTFjLTg0ODktOWI1ZTlkYmFlYjU0IiwidCI6IjVhNDg0OTUzLTc3ZWYtNDJlYy05MGNmLTJmNGUxMDM3ZmZjNyIsImMiOjEwfQ%3D%3D"
-                allowFullScreen="true"></iframe>
+            src="https://app.powerbi.com/view?r=eyJrIjoiM2JhOTRkZjUtYmFhNC00YTFjLTg0ODktOWI1ZTlkYmFlYjU0IiwidCI6IjVhNDg0OTUzLTc3ZWYtNDJlYy05MGNmLTJmNGUxMDM3ZmZjNyIsImMiOjEwfQ%3D%3D"
+            allowFullScreen="true"></iframe>
+
+        <!-- 第一圖表 -->
+        <div class="section-title">圖一：各測站1~5月每日雨量</div>
+        <div class="subtitle">研究問題</div>
+        <div class="desc">各測站的1至5月的降雨情況為何？是否有極端氣候（暴雨、缺水）？</div>
+        <div class="subtitle">互動設計</div>
+        <div class="desc">
+            以折線圖方式呈現各測站每日降雨量。每個測站對應不同顏色，使用者可點擊觀察特定測站顏色，進行該測站不同月份雨量比較，分析是否有降雨量特別多或缺水情形。
+        </div>
+        <div class="subtitle">DIKW 架構</div>
+        <div class="dikw-block">
+            <div class="dikw-title">資料（Data）</div>
+            <ul>
+                <li>每日各測站的降雨量數據</li>
+            </ul>
+            <div class="dikw-title">資訊（Information）</div>
+            <ul>
+                <li>每月各測站降雨情形，數值以視覺化方式呈現</li>
+            </ul>
+            <div class="dikw-title">知識（Knowledge）</div>
+            <ul>
+                <li>可直觀看出哪些測站有極端氣候（如極端降雨或乾旱）</li>
+            </ul>
+            <div class="dikw-title">智慧（Wisdom）</div>
+            <ul>
+                <li>可應用於天氣預測、室外活動決策等</li>
+            </ul>
+        </div>
+
+        <!-- 第三圖表 -->
+        <div class="section-title">圖三：緞帶圖&卡片圖</div>
+        <div class="subtitle">研究問題</div>
+        <div class="desc">哪些測站有最多的總降雨？哪些測站每個月都有降雨？降雨集中在哪幾月，是否有明顯雨季？</div>
+        <div class="subtitle">互動設計</div>
+        <div class="desc">
+            緞帶圖呈現不同測站1~5月降雨量。卡片圖以方塊表示每測站總雨量，方塊越大總雨量越大，不同測站有不同顏色。
+        </div>
+        <div class="subtitle">DIKW 架構</div>
+        <div class="dikw-block">
+            <div class="dikw-title">資料（Data）</div>
+            <ul>
+                <li>每月各測站總降雨量</li>
+            </ul>
+            <div class="dikw-title">資訊（Information）</div>
+            <ul>
+                <li>總降雨量最多的測站</li>
+            </ul>
+            <div class="dikw-title">知識（Knowledge）</div>
+            <ul>
+                <li>是否有明顯雨季月份</li>
+            </ul>
+            <div class="dikw-title">智慧（Wisdom）</div>
+            <ul>
+                <li>洪水防治政策規劃等</li>
+            </ul>
+        </div>
+
+        <!-- 第五圖表 -->
+        <div class="section-title">圖五：地圖&直方圖</div>
+        <div class="subtitle">研究問題</div>
+        <div class="desc">各地區的降雨分布，地圖中哪些測站總降雨量最多？</div>
+        <div class="subtitle">互動設計</div>
+        <div class="desc">
+            地圖顯示各測站地理位置，泡泡大小表示降雨量。直方圖依總降雨量排序測站。使用者可點擊地圖泡泡、直觀看出該測站總降水量，也可放大檢視。
+        </div>
+        <div class="subtitle">DIKW 架構</div>
+        <div class="dikw-block">
+            <div class="dikw-title">資料（Data）</div>
+            <ul>
+                <li>各測站地理位置（經緯度）、各測站總降雨量</li>
+            </ul>
+            <div class="dikw-title">資訊（Information）</div>
+            <ul>
+                <li>降雨量與地理空間的關係，直觀視覺化呈現</li>
+            </ul>
+            <div class="dikw-title">知識（Knowledge）</div>
+            <ul>
+                <li>發現某些地區為降雨熱點</li>
+            </ul>
+            <div class="dikw-title">智慧（Wisdom）</div>
+            <ul>
+                <li>防水災政策規劃</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
