@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>作業報表展示</title>
-    <meta name="viewport" content="width=600, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
@@ -13,7 +13,7 @@
             min-height: 100vh;
         }
         .container {
-            max-width: 700px;
+            max-width: 1000px;
             margin: 40px auto;
             background: #fff;
             border-radius: 16px;
@@ -33,23 +33,29 @@
             border: none;
             border-radius: 12px;
             box-shadow: 0 2px 12px rgba(60,60,80,.1);
+            width: 900px;
+            height: 600px;
+            max-width: 100%;
         }
-        @media (max-width: 700px) {
+        @media (max-width: 950px) {
             .container {
                 padding: 16px 4px;
+                max-width: 100vw;
             }
             iframe {
                 width: 100% !important;
-                height: 300px !important;
+                height: 400px !important;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>作業報表展示</h1>
-        <p>下方為互動式 Power BI 報表，歡迎操作瀏覽！</p>
-    <iframe title="A1123317_何晨禎_PowerBI個人專案" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiM2JhOTRkZjUtYmFhNC00YTFjLTg0ODktOWI1ZTlkYmFlYjU0IiwidCI6IjVhNDg0OTUzLTc3ZWYtNDJlYy05MGNmLTJmNGUxMDM3ZmZjNyIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+        <h1>POWER BI 雨量測站報表</h1>
+        <p>A1123317 何晨禎</p>
+        <iframe title="A1123317_何晨禎_PowerBI個人專案"
+                src="https://app.powerbi.com/view?r=eyJrIjoiM2JhOTRkZjUtYmFhNC00YTFjLTg0ODktOWI1ZTlkYmFlYjU0IiwidCI6IjVhNDg0OTUzLTc3ZWYtNDJlYy05MGNmLTJmNGUxMDM3ZmZjNyIsImMiOjEwfQ%3D%3D"
+                allowFullScreen="true"></iframe>
     </div>
 </body>
 </html>
